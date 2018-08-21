@@ -1,4 +1,4 @@
 #  Bunya
 Lightweight CLI tool for nicely viewing JSON logs
 
-![image](screen.png)
+![image](https://raw.githubusercontent.com/petrgrishin/bunya/master/screen.png)
