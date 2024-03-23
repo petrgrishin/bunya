@@ -1,6 +1,6 @@
 {
   "name": "bunya",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -13,17 +13,16 @@
   "author": "Petr Grishin",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    "@babel/core": "^7.24.3",
+    "babel-loader": "^9.1.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "coveralls": "^3.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2",
+    "mocha": "^10.3.0",
+    "nyc": "^15.1.0",
     "should": "^13.2.3",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "chalk": "^2.4.1",

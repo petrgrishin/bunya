@@ -66,6 +66,10 @@ rl.on('line', (line) => {
         ...object
     } = parse;
 
+    if (!level) {
+        return process.stdout.write(labelLevelFormat(0) + ` ${line}\n\n`);
+    }
+
     try {
         if (object.data) {
             const a = object.data.replace(/'/g, '"').replace(/(\s*?{\s*?|\s*?,\s*?)(['"])?(\w+)(['"])?:/g, '$1"$3":');

@@ -1,8 +1,9 @@
 const path = require('path');
 const { BannerPlugin } = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
+    mode: 'production',
     target: 'node',
     resolve: {
         modules: [ 'node_modules', '.' ]
@@ -41,11 +42,10 @@ module.exports = {
         ]
     },
     optimization: {
-        minimizer: [
-            new UglifyJsPlugin({
-                test: /^bunya$/,
-            }),
-        ]
+        minimize: true,
+        minimizer: [new TerserPlugin({
+            test: /bunya/,
+        })],
     },
     plugins: [
         new BannerPlugin({ banner: "#!/usr/bin/env node", raw: true }),

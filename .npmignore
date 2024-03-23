@@ -1,0 +1,12 @@
+.idea
+.husky
+
+node_modules
+
+package-lock.json
+
+webpack.config.js
+*.test.js
+*.png
+
+log.json
