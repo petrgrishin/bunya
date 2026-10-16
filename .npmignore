@@ -3,11 +3,9 @@
 
 node_modules
 
-package-lock.json
-
 mise.toml
 *.test.js
 test/
 *.png
 
-log.json
+.DS_Store

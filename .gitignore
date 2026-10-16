@@ -70,3 +70,4 @@ typings/
 out
 gen
 
+.DS_Store
