@@ -1,0 +1,10 @@
+[tools]
+node = ["26", "24", "22"]
+
+[tasks.test]
+description = "Run tests on Node.js 26, 24, and 22"
+run = [
+    "mise exec node@26 -- npm test",
+    "mise exec node@24 -- npm test",
+    "mise exec node@22 -- npm test",
+]

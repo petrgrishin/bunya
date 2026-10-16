@@ -5,8 +5,9 @@ node_modules
 
 package-lock.json
 
-webpack.config.js
+mise.toml
 *.test.js
+test/
 *.png
 
 log.json
